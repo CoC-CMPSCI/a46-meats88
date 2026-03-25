@@ -14,19 +14,19 @@ int main()
     cin >> status >> gender >> major;
 
     // TODO: Determine factor based on status, gender, and major using if statements
-if(student = yes){
-    if(female=yes){
+if("student" == status){
+    if(gender == "female"){
 
-        if (cs = yes){factor = 3.0}
+        if ("cs" == major){factor = 3.0}
         else {factor = 1.0}}
-    else if(male = yes){
-        if(cs = yes){
+    else if("male" == gender){
+        if("cs" == major){
             factor = 2.0
             else {factor = 0.2}
-        }
+        }}
     }}
     else{
-        if(cs = yes){factor = 0.5}
+        if("cs" == major){factor = 0.5}
         else{factor = 0.1}
     }
     double finalScholarship = scholarship * factor;
