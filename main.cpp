@@ -16,19 +16,27 @@ int main()
     // TODO: Determine factor based on status, gender, and major using if statements
 if("student" == status){
     if(gender == "female"){
-
-        if ("cs" == major){factor = 3.0;}
-        else {factor = 1.0;}
-    }
-    
-        else("male" == gender){
-        if("cs" == major){factor = 2.0;}
-            else {factor = 0.2;}
+        if ("cs" == major){
+            factor = 3.0;
+        }else {
+            factor = 1.0;
         }
     }
-    else{
+
+        else { 
+            if (major == "cs"){
+                factor = 2.0;
+            } else{
+                factor = 0.2;
+            }
+        }
+    }
+        
+    else {
         if("cs" == major){factor = 0.5;}
-        else{factor = 0.1;}
+        else{
+            factor = 0.1;
+        }
     }
     double finalScholarship = scholarship * factor;
 
@@ -42,4 +50,4 @@ if("student" == status){
     cout << "Decided Factor: " << factor << ", Final Scholarship Amount: " << finalScholarship << endl;
 
     return 0;
-}
+    }
